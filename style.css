@@ -1,14 +1,111 @@
-body {
+
+@media (max-width: 1500px ){
+  body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #667eea, #764ba2);
   margin: 0;
 }
-
 .container {
-  width: 400px;
+  width: 500px;
   margin: 60px auto;
   background: white;
   padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select {
+  width:250px; 
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+select{
+  width:170px;
+}
+
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Add button */
+#addBtn {
+  background: #667eea;
+  color: white;
+}
+
+#addBtn:hover {
+  background: #5a67d8;
+}
+
+/* Expense list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons inside list */
+li button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+/* Edit button */
+li button:first-child {
+  background: #ffc107;
+}
+
+/* Delete button */
+li button:last-child {
+  background: #e53e3e;
+  color: white;
+}
+}
+
+@media (min-width:750px) and (max-width: 1000px) {
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  margin: 0;
+}
+  .container {
+  width: 450px;
+  margin: 100px auto 40px  auto;
+  background: white;
+  padding: 20px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -87,4 +184,109 @@ li button:first-child {
 li button:last-child {
   background: #e53e3e;
   color: white;
+}
+}
+
+@media (max-width: 749px){
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  margin: 0;
+}
+.container {
+  width: 300px;
+  height:auto;
+  margin: 60px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select {
+  width:100%;
+  margin: 20px 0px -20px 0px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+select{
+  width:325px;
+}
+
+button {
+  display: flex;
+  width:220px;
+  justify-content: center;
+  margin:20px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Add button */
+#addBtn {
+  background: #667eea;
+  color: white;
+}
+
+#addBtn:hover {
+  background: #5a67d8;
+}
+
+/* Expense list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons inside list */
+li button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+/* Edit button */
+li button:first-child {
+  background: #ffc107;
+  width:50px;
+}
+
+/* Delete button */
+li button:last-child {
+  background: #e53e3e;
+  color: white;
+  width:50px;
+}
 }
