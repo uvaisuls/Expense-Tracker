@@ -50,12 +50,12 @@ button {
 }
 
 /* Add button */
-#addBtn {
+#add {
   background: #667eea;
   color: white;
 }
 
-#addBtn:hover {
+#add:hover {
   background: #5a67d8;
 }
 
@@ -142,12 +142,12 @@ button {
 }
 
 /* Add button */
-#addBtn {
+#add {
   background: #667eea;
   color: white;
 }
 
-#addBtn:hover {
+#add:hover {
   background: #5a67d8;
 }
 
@@ -220,7 +220,7 @@ h3 {
 }
 
 input, select {
-  width:100%;
+  width:98%;
   margin: 10px 0px -10px 0px;
   padding: 12px;
   border-radius: 8px;
@@ -228,14 +228,14 @@ input, select {
   font-size: 14px;
 }
 select{
-  width:325px;
+  width:107%;
 }
 
 button {
   display: flex;
   width:220px;
   justify-content: center;
-  margin:20px;
+  margin: 20px;
   padding: 12px;
   border-radius: 8px;
   border: none;
@@ -244,12 +244,13 @@ button {
 }
 
 /* Add button */
-#addBtn {
+#add {
+  margin-left: 50px ;
   background: #667eea;
   color: white;
 }
 
-#addBtn:hover {
+#add:hover {
   background: #5a67d8;
 }
 
